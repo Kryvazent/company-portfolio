@@ -1,0 +1,42 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#0a0a0f" rx="32"/>
+
+  <!-- Gradient background glow -->
+  <circle cx="96" cy="96" r="70" fill="url(#grad1)" opacity="0.15"/>
+
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo -->
+  <g transform="translate(96, 96)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="60" stroke="url(#grad1)" stroke-width="3" fill="none" stroke-dasharray="6 6"/>
+
+    <!-- Hexagon -->
+    <path d="M0 -50 L43.3 -25 L43.3 25 L0 50 L-43.3 25 L-43.3 -25 Z" stroke="url(#grad2)" stroke-width="3" fill="none" opacity="0.6"/>
+
+    <!-- K Letter -->
+    <rect x="-20" y="-33" width="6" height="66" fill="url(#logoGrad)"/>
+    <path d="M -14 -7 L 20 -33 L 24 -29 L -10 -3 Z" fill="url(#logoGrad)"/>
+    <path d="M -10 3 L 24 29 L 20 33 L -14 7 Z" fill="url(#logoGrad)"/>
+
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="4" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a0a0f"/>
+
+  <!-- Gradient Background Elements -->
+  <circle cx="200" cy="150" r="300" fill="url(#grad1)" opacity="0.15"/>
+  <circle cx="1000" cy="480" r="250" fill="url(#grad2)" opacity="0.1"/>
+
+  <!-- Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(99, 102, 241, 0.1)" stroke-width="1"/>
+    </pattern>
+
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.3"/>
+
+  <!-- Logo -->
+  <g transform="translate(150, 200)">
+    <!-- Outer ring -->
+    <circle cx="50" cy="50" r="45" stroke="url(#grad1)" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+
+    <!-- Hexagon -->
+    <path d="M50 10 L80 30 L80 70 L50 90 L20 70 L20 30 Z" stroke="url(#grad2)" stroke-width="2" fill="none"/>
+
+    <!-- K Letter -->
+    <rect x="35" y="25" width="4" height="50" fill="url(#textGrad)"/>
+    <path d="M 39 45 L 65 25 L 68 28 L 42 48 Z" fill="url(#textGrad)"/>
+    <path d="M 42 52 L 68 72 L 65 75 L 39 55 Z" fill="url(#textGrad)"/>
+
+    <!-- Center dot -->
+    <circle cx="50" cy="50" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Company Name -->
+  <text x="300" y="240" font-family="Arial, sans-serif" font-size="80" font-weight="700" fill="url(#textGrad)">
+    Kryvazent
+  </text>
+
+  <!-- Tagline -->
+  <text x="300" y="300" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#e5e5e7">
+    Software that actually works
+  </text>
+
+  <!-- Value Props -->
+  <g transform="translate(300, 360)">
+    <!-- Prop 1 -->
+    <circle cx="0" cy="0" r="6" fill="#6366f1"/>
+    <text x="20" y="8" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#94949b">
+      Fixed-price projects
+    </text>
+
+    <!-- Prop 2 -->
+    <circle cx="0" cy="60" r="6" fill="#6366f1"/>
+    <text x="20" y="68" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#94949b">
+      Dedicated teams
+    </text>
+
+    <!-- Prop 3 -->
+    <circle cx="0" cy="120" r="6" fill="#6366f1"/>
+    <text x="20" y="128" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#94949b">
+      Transparent pricing
+    </text>
+  </g>
+
+  <!-- Website URL -->
+  <text x="300" y="580" font-family="Arial, sans-serif" font-size="24" font-weight="500" fill="#6366f1">
+    kryvazent.com
+  </text>
+</svg>

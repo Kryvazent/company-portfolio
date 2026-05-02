@@ -1,0 +1,49 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#0a0a0f"/>
+
+  <!-- Gradient circles -->
+  <circle cx="250" cy="150" r="280" fill="url(#grad1)" opacity="0.12"/>
+  <circle cx="950" cy="450" r="220" fill="url(#grad2)" opacity="0.08"/>
+
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo centered -->
+  <g transform="translate(550, 200)">
+    <circle cx="50" cy="50" r="45" stroke="url(#grad1)" stroke-width="3" fill="none" stroke-dasharray="5 5"/>
+    <path d="M50 10 L80 30 L80 70 L50 90 L20 70 L20 30 Z" stroke="url(#grad2)" stroke-width="3" fill="none"/>
+    <rect x="35" y="25" width="5" height="50" fill="url(#textGrad)"/>
+    <path d="M 40 45 L 65 25 L 69 29 L 44 49 Z" fill="url(#textGrad)"/>
+    <path d="M 44 51 L 69 71 L 65 75 L 40 55 Z" fill="url(#textGrad)"/>
+    <circle cx="50" cy="50" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- Text -->
+  <text x="600" y="370" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="url(#textGrad)" text-anchor="middle">
+    Kryvazent
+  </text>
+
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#e5e5e7" text-anchor="middle">
+    Software engineering with no BS
+  </text>
+
+  <text x="600" y="530" font-family="Arial, sans-serif" font-size="26" font-weight="500" fill="#6366f1" text-anchor="middle">
+    kryvazent.com
+  </text>
+</svg>

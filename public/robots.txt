@@ -1,0 +1,27 @@
+# Robots.txt for Kryvazent
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kryvazent.com/sitemap.xml
+
+# Crawl-delay for polite crawlers
+Crawl-delay: 1
+
+# Disallow these if you have them in the future
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /private/
+
+# Allow specific bots full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /

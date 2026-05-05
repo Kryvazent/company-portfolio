@@ -34,7 +34,7 @@ export function SEOHead() {
       { name: 'twitter:image', content: 'https://kryvazent.com/twitter-image.svg' },
 
       // Additional SEO
-      { name: 'theme-color', content: '#6366f1' },
+      { name: 'theme-color', content: '#2563eb' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
       { name: 'format-detection', content: 'telephone=no' },
@@ -63,6 +63,24 @@ export function SEOHead() {
       document.head.appendChild(canonical);
     }
     canonical.setAttribute('href', 'https://kryvazent.com/');
+
+    // Add favicon links
+    const faviconLinks = [
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      { rel: 'alternate icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.svg' },
+    ];
+
+    faviconLinks.forEach(({ rel, type, href }) => {
+      let link = document.querySelector(`link[rel="${rel}"]`);
+      if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', rel);
+        if (type) link.setAttribute('type', type);
+        document.head.appendChild(link);
+      }
+      link.setAttribute('href', href);
+    });
 
     // Add JSON-LD structured data
     let script = document.querySelector('script[type="application/ld+json"]');

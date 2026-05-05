@@ -1,4 +1,64 @@
 export function Services() {
+  const services = [
+    {
+      title: 'Web Development',
+      description: 'Custom websites and web applications built with modern technologies. Responsive, fast, and user-friendly designs that convert visitors into customers.',
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <rect x="2" y="3" width="20" height="14" rx="2" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M8 21h8M12 17v4" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    },
+    {
+      title: 'SEO Optimization',
+      description: 'Boost your online visibility and organic traffic. We optimize your website to rank higher in search engines and attract your target audience.',
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="8" strokeWidth={2}/>
+          <path d="M21 21l-4.35-4.35" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    },
+    {
+      title: 'Custom Software',
+      description: 'Tailored software solutions to streamline your business processes. From automation tools to complex enterprise systems.',
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M16 18L22 12L16 6M8 6L2 12L8 18" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    },
+    {
+      title: 'Mobile Apps',
+      description: 'Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android devices.',
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <rect x="5" y="2" width="14" height="20" rx="2" strokeWidth={2}/>
+          <path d="M12 18h.01" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    },
+    {
+      title: 'Cloud Solutions',
+      description: 'Scalable cloud infrastructure and deployment strategies. Migrate, host, and manage your applications with confidence.',
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    },
+    {
+      title: 'Performance Optimization',
+      description: 'Speed up your digital products and improve user satisfaction. Technical audits and optimization for maximum performance.',
+      icon: (
+        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    }
+  ];
+
   const steps = [
     {
       number: '01',
@@ -47,18 +107,53 @@ export function Services() {
   ];
 
   return (
-    <section id="how" className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"></div>
+    <>
+      {/* Services Grid */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 600 }}>
+              What we do
+            </h2>
+            <p className="text-xl text-muted-foreground" style={{ fontWeight: 400 }}>
+              End-to-end development services for your digital products
+            </p>
+          </div>
 
-      <div className="max-w-6xl mx-auto relative">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 600 }}>
-            How we work
-          </h2>
-          <p className="text-xl text-muted-foreground" style={{ fontWeight: 400 }}>
-            No fluff. No waste. Just results.
-          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="group p-8 bg-card/30 border border-border rounded-2xl hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 duration-300"
+              >
+                <div className="w-16 h-16 mb-6 text-primary group-hover:scale-110 transition-transform duration-300">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl mb-3" style={{ fontWeight: 600 }}>
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
+
+      {/* How We Work */}
+      <section id="how" className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"></div>
+
+        <div className="max-w-6xl mx-auto relative">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 600 }}>
+              How we work
+            </h2>
+            <p className="text-xl text-muted-foreground" style={{ fontWeight: 400 }}>
+              No fluff. No waste. Just results.
+            </p>
+          </div>
 
         <div className="grid md:grid-cols-2 gap-6 relative">
           {/* Connection line for desktop */}
@@ -105,5 +200,6 @@ export function Services() {
         </div>
       </div>
     </section>
+    </>
   );
 }

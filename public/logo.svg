@@ -1,45 +1,23 @@
 <svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="500" height="500" fill="#0a0a0f"/>
-
-  <!-- Gradient background glow -->
-  <circle cx="250" cy="250" r="180" fill="url(#grad1)" opacity="0.15"/>
-
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
-    </linearGradient>
-
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
-    </linearGradient>
-
-    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
     </linearGradient>
   </defs>
 
-  <!-- Logo -->
+  <!-- Circular background -->
+  <circle cx="250" cy="250" r="225" fill="url(#bgGrad)"/>
+
+  <!-- K Letter -->
   <g transform="translate(250, 250)">
-    <!-- Outer ring -->
-    <circle cx="0" cy="0" r="155" stroke="url(#grad1)" stroke-width="8" fill="none" stroke-dasharray="15 15"/>
+    <!-- Vertical line -->
+    <rect x="-70" y="-125" width="30" height="250" fill="white" rx="15"/>
 
-    <!-- Hexagon -->
-    <path d="M0 -130 L112.5 -65 L112.5 65 L0 130 L-112.5 65 L-112.5 -65 Z" stroke="url(#grad2)" stroke-width="7" fill="none" opacity="0.6"/>
+    <!-- Upper diagonal -->
+    <path d="M -40 -28 L 100 -125 L 117 -108 L -23 -11 Z" fill="white"/>
 
-    <!-- K Letter -->
-    <rect x="-52" y="-86" width="15" height="172" fill="url(#logoGrad)"/>
-    <path d="M -37 -17 L 52 -86 L 62 -76 L -27 -7 Z" fill="url(#logoGrad)"/>
-    <path d="M -27 7 L 62 76 L 52 86 L -37 17 Z" fill="url(#logoGrad)"/>
-
-    <!-- Center dot -->
-    <circle cx="0" cy="0" r="10" fill="#ffffff"/>
-
-    <!-- Orbiting particle -->
-    <circle cx="0" cy="-155" r="6" fill="#6366f1"/>
+    <!-- Lower diagonal -->
+    <path d="M -23 11 L 117 108 L 100 125 L -40 28 Z" fill="white"/>
   </g>
 </svg>

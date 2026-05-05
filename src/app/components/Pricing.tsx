@@ -8,10 +8,13 @@ export function Pricing() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl mb-4" style={{ fontWeight: 600 }}>
-            Transparent pricing
+            Simple, honest pricing
           </h2>
-          <p className="text-xl text-muted-foreground" style={{ fontWeight: 400 }}>
-            No estimates. No hourly rates. Fixed scope, fixed price.
+          <p className="text-xl text-muted-foreground mb-2" style={{ fontWeight: 400 }}>
+            Clear pricing, no surprises. Pay as you go.
+          </p>
+          <p className="text-lg text-muted-foreground" style={{ fontWeight: 400 }}>
+            Flexible payment plans available • Start small, scale up anytime
           </p>
 
           <div className="mt-8 inline-flex items-center gap-2 p-1 bg-background/50 border border-border rounded-lg">
@@ -52,18 +55,20 @@ export function Pricing() {
                     </svg>
                     <span className="text-xs text-primary" style={{ fontWeight: 600 }}>STARTER</span>
                   </div>
-                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Small project</h3>
+                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Quick Start</h3>
                   <p className="text-muted-foreground mb-4" style={{ fontWeight: 400 }}>
-                    Landing pages, admin panels, simple tools
+                    Landing pages, admin panels, MVP tools
                   </p>
                 </div>
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1 mb-2">
-                    <span className="text-4xl" style={{ fontWeight: 600 }}>$12k</span>
-                    <span className="text-xl text-muted-foreground" style={{ fontWeight: 400 }}>- $25k</span>
+                    <span className="text-lg text-muted-foreground" style={{ fontWeight: 400 }}>Starting at</span>
                   </div>
-                  <p className="text-sm text-muted-foreground" style={{ fontWeight: 400 }}>Fixed price</p>
+                  <div className="flex items-baseline gap-1 mb-2">
+                    <span className="text-4xl" style={{ fontWeight: 600 }}>$12k</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground" style={{ fontWeight: 400 }}>Or $2k/month over 6 months</p>
                 </div>
 
                 <div className="space-y-3 mb-6 flex-1">
@@ -90,7 +95,7 @@ export function Pricing() {
                   className="w-full py-3 border border-border bg-card/50 rounded-lg hover:bg-accent transition-all"
                   style={{ fontWeight: 500 }}
                 >
-                  Get quote
+                  Let's chat
                 </button>
               </div>
             </div>
@@ -109,18 +114,20 @@ export function Pricing() {
                     </svg>
                     <span className="text-xs text-primary" style={{ fontWeight: 600 }}>PROFESSIONAL</span>
                   </div>
-                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Medium project</h3>
+                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Growth</h3>
                   <p className="text-muted-foreground mb-4" style={{ fontWeight: 400 }}>
-                    SaaS products, mobile apps, integrations
+                    Full SaaS products, mobile apps, integrations
                   </p>
                 </div>
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1 mb-2">
-                    <span className="text-4xl text-primary" style={{ fontWeight: 600 }}>$30k</span>
-                    <span className="text-xl text-primary/60" style={{ fontWeight: 400 }}>- $70k</span>
+                    <span className="text-lg text-muted-foreground" style={{ fontWeight: 400 }}>Starting at</span>
                   </div>
-                  <p className="text-sm text-muted-foreground" style={{ fontWeight: 400 }}>Fixed price</p>
+                  <div className="flex items-baseline gap-1 mb-2">
+                    <span className="text-4xl text-primary" style={{ fontWeight: 600 }}>$30k</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground" style={{ fontWeight: 400 }}>Or $5k/month over 6 months</p>
                 </div>
 
                 <div className="space-y-3 mb-6 flex-1">
@@ -161,7 +168,7 @@ export function Pricing() {
                   className="w-full py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/25"
                   style={{ fontWeight: 500 }}
                 >
-                  Get quote
+                  Start your project
                 </button>
               </div>
             </div>
@@ -176,18 +183,20 @@ export function Pricing() {
                     </svg>
                     <span className="text-xs text-primary" style={{ fontWeight: 600 }}>ENTERPRISE</span>
                   </div>
-                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Large project</h3>
+                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Scale</h3>
                   <p className="text-muted-foreground mb-4" style={{ fontWeight: 400 }}>
-                    Platforms, marketplaces, complex systems
+                    Complex platforms, marketplaces, enterprise systems
                   </p>
                 </div>
 
                 <div className="mb-6">
                   <div className="flex items-baseline gap-1 mb-2">
-                    <span className="text-4xl" style={{ fontWeight: 600 }}>$80k</span>
-                    <span className="text-xl text-muted-foreground" style={{ fontWeight: 400 }}>- $200k</span>
+                    <span className="text-lg text-muted-foreground" style={{ fontWeight: 400 }}>Starting at</span>
                   </div>
-                  <p className="text-sm text-muted-foreground" style={{ fontWeight: 400 }}>Fixed price</p>
+                  <div className="flex items-baseline gap-1 mb-2">
+                    <span className="text-4xl" style={{ fontWeight: 600 }}>$80k</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground" style={{ fontWeight: 400 }}>Custom payment plans available</p>
                 </div>
 
                 <div className="space-y-3 mb-6 flex-1">
@@ -218,7 +227,7 @@ export function Pricing() {
                   className="w-full py-3 border border-border bg-card/50 rounded-lg hover:bg-accent transition-all"
                   style={{ fontWeight: 500 }}
                 >
-                  Get quote
+                  Let's chat
                 </button>
               </div>
             </div>
@@ -233,9 +242,9 @@ export function Pricing() {
                     </svg>
                     <span className="text-xs text-primary" style={{ fontWeight: 600 }}>CUSTOM</span>
                   </div>
-                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Custom project</h3>
+                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Custom</h3>
                   <p className="text-muted-foreground mb-4" style={{ fontWeight: 400 }}>
-                    Unique requirements, tailored solutions
+                    Something unique? We'll build it together.
                   </p>
                 </div>
 
@@ -274,7 +283,7 @@ export function Pricing() {
                   className="w-full py-3 border border-border bg-card/50 rounded-lg hover:bg-accent transition-all"
                   style={{ fontWeight: 500 }}
                 >
-                  Contact us
+                  Let's talk
                 </button>
               </div>
             </div>
@@ -283,14 +292,15 @@ export function Pricing() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="p-8 bg-card/50 border border-border rounded-2xl">
               <div className="mb-6">
-                <h3 className="text-2xl mb-2" style={{ fontWeight: 600 }}>Part-time team</h3>
+                <h3 className="text-2xl mb-2" style={{ fontWeight: 600 }}>Part-time developer</h3>
                 <p className="text-lg text-muted-foreground" style={{ fontWeight: 400 }}>
-                  1 senior engineer, shared between projects
+                  Perfect for ongoing maintenance & features
                 </p>
               </div>
               <div className="mb-6">
+                <p className="text-sm text-muted-foreground mb-1" style={{ fontWeight: 400 }}>Starting at</p>
                 <div className="text-5xl mb-2" style={{ fontWeight: 600 }}>$8k<span className="text-2xl text-muted-foreground">/mo</span></div>
-                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>~80 hours per month</p>
+                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>~80 hours • 1 senior engineer</p>
               </div>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-3">
@@ -317,20 +327,21 @@ export function Pricing() {
                 className="w-full py-3 bg-card border border-border rounded-lg hover:bg-accent transition-all"
                 style={{ fontWeight: 500 }}
               >
-                Start subscription
+                Get started
               </button>
             </div>
 
             <div className="p-8 bg-card/50 border-2 border-primary rounded-2xl">
               <div className="mb-6">
-                <h3 className="text-2xl mb-2" style={{ fontWeight: 600 }}>Dedicated team</h3>
+                <h3 className="text-2xl mb-2" style={{ fontWeight: 600 }}>Full-time team</h3>
                 <p className="text-lg text-muted-foreground" style={{ fontWeight: 400 }}>
-                  2-3 engineers working exclusively for you
+                  Your dedicated team, working exclusively for you
                 </p>
               </div>
               <div className="mb-6">
+                <p className="text-sm text-muted-foreground mb-1" style={{ fontWeight: 400 }}>Starting at</p>
                 <div className="text-5xl mb-2" style={{ fontWeight: 600 }}>$18k<span className="text-2xl text-muted-foreground">/mo</span></div>
-                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>~320 hours per month</p>
+                <p className="text-muted-foreground" style={{ fontWeight: 400 }}>~320 hours • 2-3 senior engineers</p>
               </div>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-3">
@@ -357,7 +368,7 @@ export function Pricing() {
                 className="w-full py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all"
                 style={{ fontWeight: 500 }}
               >
-                Start subscription
+                Get started
               </button>
             </div>
 
@@ -371,9 +382,9 @@ export function Pricing() {
                     </svg>
                     <span className="text-xs text-primary" style={{ fontWeight: 600 }}>CUSTOM</span>
                   </div>
-                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Custom plan</h3>
+                  <h3 className="text-2xl mb-3" style={{ fontWeight: 600 }}>Custom Plan</h3>
                   <p className="text-muted-foreground mb-4" style={{ fontWeight: 400 }}>
-                    Tailored to your specific needs
+                    Need something different? Let's work it out.
                   </p>
                 </div>
 
@@ -422,7 +433,7 @@ export function Pricing() {
                   className="w-full py-3 border border-border bg-card/50 rounded-lg hover:bg-accent transition-all"
                   style={{ fontWeight: 500 }}
                 >
-                  Contact us
+                  Let's talk
                 </button>
               </div>
             </div>
@@ -430,11 +441,17 @@ export function Pricing() {
         )}
 
         <div className="mt-12 p-6 bg-primary/5 border border-primary/20 rounded-xl">
-          <p className="text-center text-muted-foreground" style={{ fontWeight: 400 }}>
-            All prices include: code reviews, testing, deployment, documentation.
-            <br className="hidden md:block" />
-            Payment: 50% upfront, 50% on delivery. Subscriptions monthly.
-          </p>
+          <div className="text-center">
+            <p className="text-lg mb-3" style={{ fontWeight: 500 }}>
+              💙 What's included in every project
+            </p>
+            <p className="text-muted-foreground mb-2" style={{ fontWeight: 400 }}>
+              Code reviews • Testing • Deployment • Full documentation • Bug fixes
+            </p>
+            <p className="text-sm text-muted-foreground" style={{ fontWeight: 400 }}>
+              Flexible payment plans • No hidden fees • Cancel anytime on subscriptions
+            </p>
+          </div>
         </div>
       </div>
     </section>

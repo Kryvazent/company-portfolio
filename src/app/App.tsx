@@ -9,6 +9,7 @@ import { Footer } from './components/Footer';
 import { AnimatedBackground } from './components/AnimatedBackground';
 import { LoadingScreen } from './components/LoadingScreen';
 import { SEOHead } from './components/SEOHead';
+import { ThemeProvider } from './components/ThemeProvider';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <>
+    <ThemeProvider>
       <SEOHead />
       <div className="min-h-screen bg-background text-foreground relative">
         <AnimatedBackground />
@@ -41,6 +42,6 @@ export default function App() {
           <Footer />
         </div>
       </div>
-    </>
+    </ThemeProvider>
   );
 }

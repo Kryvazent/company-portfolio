@@ -1,7 +1,7 @@
 
-  # Professional Software Company Website
+  # Professional Software Company Website (Copy)
 
-  This is a code bundle for Professional Software Company Website. The original project is available at https://www.figma.com/design/A62Jumwvhg1FHAL9XHW9dK/Professional-Software-Company-Website.
+  This is a code bundle for Professional Software Company Website (Copy). The original project is available at https://www.figma.com/design/lg9nvDNUYH3wvFmnQxuodD/Professional-Software-Company-Website--Copy-.
 
   ## Running the code
 

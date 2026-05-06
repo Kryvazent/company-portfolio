@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
+import { WhoWeServe } from './components/WhoWeServe';
 import { Services } from './components/Services';
 import { Pricing } from './components/Pricing';
 import { Features } from './components/Features';
@@ -35,6 +36,7 @@ export default function App() {
         <div className="relative z-10">
           <Navigation />
           <Hero />
+          <WhoWeServe />
           <Services />
           <Features />
           <Pricing />

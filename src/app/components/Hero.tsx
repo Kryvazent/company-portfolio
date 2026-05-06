@@ -30,10 +30,11 @@ export function Hero() {
             <span className="text-primary animate-pulse-slow">actually works</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-12" style={{ fontWeight: 400 }}>
-            Fixed-price projects or dedicated teams. No BS, no bloat.
-            <br />
-            Just clean code that solves real problems.
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-4" style={{ fontWeight: 400 }}>
+            We build custom web apps, mobile apps, and SaaS products for startups and growing companies.
+          </p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-12" style={{ fontWeight: 400 }}>
+            Fixed-price projects or dedicated teams. No BS, no bloat—just production-ready code delivered fast.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
